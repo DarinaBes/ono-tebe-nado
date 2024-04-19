@@ -66,12 +66,12 @@
 }
 
 .cover {
-  height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  background-position: -138px;
+  background-position: center;
   position: relative;
   z-index: 0;
+  padding-bottom: 51px;
 }
 
 .overlay {
@@ -140,7 +140,7 @@
   margin-right: 50px;
   background-color: transparent;
   width: 256px;
-  height: 51px;
+  padding: 12px 32px 11px 31px;
   color: #fff;
   text-transform: uppercase;
   font-size: 22px;
@@ -164,6 +164,7 @@
   padding-bottom: 30px;
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
@@ -179,12 +180,12 @@
 
 .card {
   padding: 51px 40px 48px;
-  height: 563px;
+  min-height: 563px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-size: cover;
-  background-position: -102px;
+  background-position: center;
   position: relative;
 }
 
@@ -310,4 +311,5 @@
 
 .footer__social-icon {
   height: 48px;
+  width: 48px;
 }
