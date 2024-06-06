@@ -1,12 +1,9 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 92px 24px 92px;
-}
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+align-items: center;
+ padding: 92px 50px;
 
-.header__menu {
-  padding-left: 27px;
 }
 
 .header__links-list {
@@ -21,8 +18,8 @@
   border-bottom: 1px black solid;
 }
 
-.header__links-list-item_no-bullit {
-  list-style: none;
+.header__links-list-item:first-child {
+    list-style: none;
 }
 
 .header__link {
@@ -31,12 +28,6 @@
 
 .header__link_active {
   border-bottom: none;
-}
-
-.header__logo {
-  display: block;
-  margin-right: auto;
-  padding-left: 44px;
 }
 
 .header__logo-image {
@@ -61,7 +52,6 @@
 }
 
 .header__address {
-  padding-right: 60px;
   justify-content: flex-end;
 }
 
@@ -119,21 +109,18 @@
 
 .cover__description {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   z-index: 2;
+  gap: 78px;
   position: relative;
 }
 
 .cover__description-text {
   color: #fff;
   font-size: 22px;
-  font-weight: 400;
-  line-height: 28px;
   text-transform: uppercase;
-  padding-left: 78px;
-  word-spacing: 19px;
+  word-spacing: 18px;
 }
 
 .bet-button {
